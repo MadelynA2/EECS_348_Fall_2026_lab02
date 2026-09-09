@@ -26,8 +26,8 @@ isOdd.o: isOdd.c isOdd.h #shows that isOdd.o is dependent on isOdd.c and isOdd.h
 #compiles isOdd.c and checks for common compiler warnings
 
 clean: #creates a target called clean with no dependencies
-	rm -f *.o prog 
+	rm -f *.o program 
 #deletes object files and executable files, but leaves source code untouched. 
-
+.PHONY: clean #makes clean be used as an action
 
 
